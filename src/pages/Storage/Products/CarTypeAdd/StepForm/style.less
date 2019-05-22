@@ -1,0 +1,124 @@
+@import '~antd/lib/style/themes/default.less';
+
+.stepForm {
+  margin: 50px auto 0;
+  // max-width: 500px;
+  padding: 0 70px;
+}
+
+.stepFormText {
+  margin-bottom: 24px;
+
+  :global {
+
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 22px;
+    }
+  }
+}
+
+.result {
+  margin: 0 auto;
+  // max-width: 560px;
+  padding: 24px 0 8px;
+}
+
+.desc {
+  padding: 0 56px;
+  color: @text-color-secondary;
+
+  h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: @text-color-secondary;
+    line-height: 32px;
+  }
+
+  h4 {
+    margin: 0 0 4px 0;
+    color: @text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .desc {
+    padding: 0;
+  }
+}
+
+.information {
+  :global {
+    .ant-row:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .label {
+    color: @heading-color;
+    text-align: right;
+    padding-right: 8px;
+
+    @media screen and (max-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+.money {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.uppercase {
+  font-size: 12px;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.inputNum {
+  width:calc(100% - 50px);
+}
+.footer{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.listImg{
+  padding: 0;
+  li{
+    margin:6px;
+    display: inline-block;
+    width: calc(50% - 12px);
+    position: relative;
+    overflow: hidden;
+  }
+  a{
+    display:inline-block;
+    padding: 6px;
+    border: 1px solid #ddd;
+    height: 170px;
+    overflow: hidden;
+  }
+  img{
+    width: 100%;
+  }
+  
+}
+.delete{
+  margin-left: 12px;
+}
